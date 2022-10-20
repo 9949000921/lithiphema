@@ -27,5 +27,6 @@ http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/cu
 		<http:listener doc:name="Listener" doc:id="548eeee7-5857-4a69-b856-5713ccd5eabc" config-ref="HTTP_Listener_config" path="/consume"/>
 		<vm:consume queueName="publish" doc:name="Consume" doc:id="6264a956-2f93-4afa-ad0f-296df1189553" config-ref="VM_Config" timeout="10"/>
 		<logger level="INFO" doc:name="Logger" doc:id="c9707ad5-341e-43ed-a3d2-737a63f51fa3" message="#[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="9113fe07-15f9-433e-b33a-b7e4f1234370" message="hai"/>
 	</flow>
 </mule>
